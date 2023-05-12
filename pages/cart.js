@@ -118,10 +118,10 @@ export default function CartPage() {
             <Center>
                 {isSuccess ?
                     <ColumnsWrapper>
-                        <Box>
+                        <WhiteBox>
                             <h1>Thanks for your order!</h1>
                             <p>We will email you when your order will be sent.</p>
-                        </Box>
+                        </WhiteBox>
                     </ColumnsWrapper>
                     :
                     <ColumnsWrapper>
