@@ -74,10 +74,10 @@ export default function Featured({ product }) {
                 <ColumnsWrapper>
                     <Column>
                         <div>
-                            <Title>{product.title}</Title>
-                            <Desc>{product.description}</Desc>
+                            <Title>{product?.title}</Title>
+                            <Desc>{product?.description}</Desc>
                             <ButtonsWrapper>
-                                <ButtonLink href={'/product/' + product._id} white="true" outline="true">
+                                <ButtonLink href={'/product/' + product?._id} white="true" outline="true">
                                     Read more
                                 </ButtonLink>
                                 <Button white onClick={addFeaturedToCart}>
@@ -88,7 +88,7 @@ export default function Featured({ product }) {
                         </div>
                     </Column>
                     <Column>
-                        <img src="http://localhost:3000/static/images/screen_processing__f36dk3ge7wey_large.jpg" alt="" />
+                        <img src="http://res.cloudinary.com/dhtmahqsw/image/upload/v1684396795/qg4sci7lp8jizonwsy4h.jpg" alt="" />
                     </Column>
                 </ColumnsWrapper>
             </Center>
